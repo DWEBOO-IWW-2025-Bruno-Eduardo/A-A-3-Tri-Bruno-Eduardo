@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+
+<body>
+
+    <h1>Exercício 1</h1>
+
+    <p id="saida"></p>
+
+    <script>
+        const nome = "Bruno Eduardo Lazarin";
+        const cidade = "Assis Chateaubriand";
+        const anoNascimento = 2010;
+
+        const anoAtual = new Date().getFullYear();
+        const idade = anoAtual - anoNascimento;
+
+        const frase = `Meu nome é ${nome}, moro em ${cidade} e tenho ${idade} anos.`;
+
+        console.log(frase);
+
+        document.getElementById("saida").textContent = frase;
+    </script>
+
+</body>
+
+</html>
